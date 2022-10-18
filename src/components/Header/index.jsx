@@ -6,46 +6,50 @@ import logo from '../../assets/LOGO.png'
 import colors from '../../utils/style/colors'
 
 
-const HeaderContainer = styled.div`
-  width: 90%;
+const HeaderContainer = styled.header`
     justify-content: space-between;
     display:flex;
     flex-direction: row;
+    padding: 40px 100px;
     @media (max-width: 899px){
-      margin: 5% auto;
+      padding : 20px;
 		  align-items: center;
-    }
-    @media (min-width: 900px){
-      margin: 2% auto;
-		  align-items: baseline;
-		  max-width: 1250px;
+      display: flex;
     }
 `
 const HomeLogo = styled.img`
   height: 70px;
   @media (max-width: 899px){
     height: 45px;
+    width: 145px;
 }
+  @media (max-width : 350px){
+    width : 80%;
+    height: 80%;
+  }
 `
 //Navbar
 const StyledNav = styled.nav`
-  width: 50%;
   text-align: right;
   display:flex;
   justify-content: flex-end;
+  gap: 50px;
+  align-items: center;
+  @media (max-width: 899px){
+    gap: 15px;
+    }
 `
 
 const StyledLink = styled(NavLink)`
   color: ${colors.primary};
-  margin-left: 5%;
   font-weight: 500;
   text-decoration: none;
+  font-size: 24px;
   @media (max-width: 899px){
-    font-size: small;
+    font-size: 12px;
   text-transform: uppercase;
   }
-  @media (min-width: 900px){ 
-    font-size: 24px; }
+  
 `
 
 function Header() {

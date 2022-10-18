@@ -7,7 +7,9 @@ const StyledGlobalStyle = createGlobalStyle`
     * {
       font-family: 'Montserrat', Helvetica, sans-serif;
     }
-    
+    body{
+      margin: 0px;
+    }
 `
 function GlobalStyle() {
   

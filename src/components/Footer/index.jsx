@@ -14,8 +14,10 @@ const FooterContainer = styled.div`
         align-items:center;
         justify-content: center;
         gap: 30px;
+        
         @media (max-width: 899px){
         height: 209px;
+        padding : 0px;
         
 }`
 const FooterDiv = styled.div`

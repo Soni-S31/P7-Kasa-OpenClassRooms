@@ -17,12 +17,8 @@ const Banner = styled.div`
     @media (max-width: 899px){
     height:110px;
     border-radius: 10px;
-    
 }
-  
     `
-
-
 const ImgTitle = styled.img`
     width: 100%;
     height: 100%;
@@ -41,29 +37,14 @@ const TitleHome = styled.h2`
     font-size: 48px;
     font-weight: 500;
     line-height: 142.6%;
-    align-items : center;
     display:flex;
-  
     color: #FFFFFF;
     @media (max-width: 899px){
-      display:flex;
-      align-items:flex-end;
     font-size: 24px;
     line-height:100%;
-    right:33%;
-    left: 10%;
-
-}
-    
-    
-    
-    @media (max-width: 375px){
-      right: 60%;
-        top: 25%;
-        bottom: 80.05%;
-        font-size: 24px;
-        line-height: 100%;
-        text-align: center;
+    text-align: left;
+    font-weight: 500;
+    left:9%;
     }`
 
 function Home() {
