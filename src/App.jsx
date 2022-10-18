@@ -5,9 +5,7 @@ import Footer from './components/Footer'
 import Error from './components/Error'
 import About from './pages/About'
 import Location from './pages/Location'
-
 import GlobalStyle from './utils/style/GlobalStyle'
-
 
 
 

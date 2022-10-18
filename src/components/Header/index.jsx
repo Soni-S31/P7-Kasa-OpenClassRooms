@@ -12,42 +12,41 @@ const HeaderContainer = styled.div`
     display:flex;
     flex-direction: row;
     @media (max-width: 899px){
-        margin: 5% auto;
-		align-items: center;
-    
+      margin: 5% auto;
+		  align-items: center;
     }
     @media (min-width: 900px){
-        margin: 2% auto;
-		align-items: baseline;
-		max-width: 1250px;
+      margin: 2% auto;
+		  align-items: baseline;
+		  max-width: 1250px;
     }
 `
 const HomeLogo = styled.img`
   height: 70px;
+  @media (max-width: 899px){
+    height: 45px;
+}
 `
+//Navbar
 const StyledNav = styled.nav`
-    width: 50%;
-    text-align: right;
-    display:flex;
-    justify-content: flex-end;
-    
-
+  width: 50%;
+  text-align: right;
+  display:flex;
+  justify-content: flex-end;
 `
 
 const StyledLink = styled(NavLink)`
-color: ${colors.primary};
-margin-left: 5%;
-
-font-weight: 500;
-text-decoration: none;
-@media (max-width: 899px){
+  color: ${colors.primary};
+  margin-left: 5%;
+  font-weight: 500;
+  text-decoration: none;
+  @media (max-width: 899px){
     font-size: small;
-text-transform: uppercase;
-}
-@media (min-width: 900px){ font-size: x-large; }
+  text-transform: uppercase;
+  }
+  @media (min-width: 900px){ 
+    font-size: 24px; }
 `
-
-
 
 function Header() {
   let activeStyle = {
@@ -60,17 +59,12 @@ return (
       <HomeLogo src={logo} />
     </Link>
     <StyledNav>
-        
-            
       <StyledLink to="/" style={({ isActive }) =>
             isActive ? activeStyle : undefined
           }>Accueil</StyledLink>
-      
       <StyledLink to="/about" style={({ isActive }) =>
             isActive ? activeStyle : undefined
           }>A propos</StyledLink>
-      
-      
     </StyledNav>
   </HeaderContainer>
 )
