@@ -1,11 +1,11 @@
 import React from 'react'
 
 
-function About() {
+function Location() {
   return (
     <div>
-      A propos
+      Logements
     </div>
   );}
 
-export default About;
+export default Location;

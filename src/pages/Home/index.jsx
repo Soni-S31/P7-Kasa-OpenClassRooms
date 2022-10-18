@@ -1,10 +1,15 @@
 import React from 'react'
-//import styled from 'styled-components'
+import BannerHome from '../../components/Banner/Index';
+
+
 
 function Home() {
   return (
     <div>
+      <BannerHome />
       Page d'accueil hello
+
+     
     </div>
   );}
 
