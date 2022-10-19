@@ -9,6 +9,7 @@ const StyledGlobalStyle = createGlobalStyle`
     }
     body{
       margin: 0px;
+      background-color : white;
     }
 `
 function GlobalStyle() {

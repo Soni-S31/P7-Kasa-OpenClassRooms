@@ -18,7 +18,4 @@ export const Loader = styled.div`
   border-radius: 22px;
   animation: ${rotate} 1s infinite linear;
   height: 0;
-  width: 0;
-`
-
-
+  width: 0;`
