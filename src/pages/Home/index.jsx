@@ -9,7 +9,7 @@ const Main = styled.main`
       padding : 0px 20px;
     }`
     
-const Banner = styled.div`
+const Banner = styled.section`
     display:flex;
     position:relative;
     background: rgba(0,0,0,.5);
