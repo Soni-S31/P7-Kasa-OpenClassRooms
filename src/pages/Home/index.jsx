@@ -28,6 +28,7 @@ const ImgTitle = styled.img`
     @media (max-width: 899px){
     height:110px;
     border-radius: 10px;
+    object-fit: cover;
 }
     `
 const TitleHome = styled.h2`
@@ -45,6 +46,7 @@ const TitleHome = styled.h2`
     text-align: left;
     font-weight: 500;
     left:9%;
+    right:25%;
     }`
 
 function Home() {
