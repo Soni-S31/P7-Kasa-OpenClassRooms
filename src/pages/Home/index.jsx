@@ -1,8 +1,9 @@
 import React from 'react'
 import BannerHome from '../../assets/bannerHome.png'
 import styled from 'styled-components'
-import colors from '../../utils/style/colors';
-//import LocationList from '../../components/LocationList';
+//import colors from '../../utils/style/colors';
+import LocationList from '../../components/LocationList';
+
 
 
 
@@ -59,7 +60,7 @@ const TitleHome = styled.h2`
     right:25%;
     }`
 
-const Location = styled.section`
+/*const LocationList = styled.section`
 display: flex;
     margin : 20px 0px;
     flex-direction : column;
@@ -70,7 +71,7 @@ display: flex;
     &:hover {
     cursor: pointer;
   }
-`
+`*/
 
 
 
@@ -82,8 +83,7 @@ export default function Home() {
           <ImgTitle src={BannerHome} alt="Chez vous, partout et ailleurs" />
           <TitleHome>Chez vous, partout et ailleurs</TitleHome>
         </Banner>
-        <Location>Hello
-        </Location>
+        <LocationList></LocationList>
     </Main>
   )}
 

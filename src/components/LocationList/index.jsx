@@ -2,9 +2,24 @@ import { Link } from "react-router-dom";
 import React from 'react';
 import styled from 'styled-components'
 import colors from '../../utils/style/colors'
-//import { useFetch } from "../../utils/hooks";
-//import Logements from "../../datas/logements.json"
+import { useFetch } from '../../utils/hooks'
+import { Loader } from '../../utils/style/Atoms'
 
+const LoaderWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+`
+
+const LocationsSection = styled.section`
+    @media (min-width: 900px){
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: ${colors.secondary};
+        border-radius: 25px;
+        padding: 2%;
+    }
+`
 
   const LinkLocation = styled(Link)`
     text-decoration: none;
@@ -51,24 +66,34 @@ import colors from '../../utils/style/colors'
     font-size: 18px;
     `
 
-
-
-export default function LocationList({title, picture}) {
+export default function LocationList() {
+  const { data, isLoading, error } = useFetch(`/logements.json`)
   
+  
+  if (error) {
+    return <pre>{error}</pre>
+  }
+  
+      return(
+          <LocationsSection >
+          {isLoading ? (
+            <LoaderWrapper>
+              <Loader data-testid="loader" />
+            </LoaderWrapper>
+          ) : (
+                  data.map((logement) => (
+                      <LinkLocation key={logement.id} to={`/Logement/${logement.id}`} className="flex">
+                          <LocationImg key={"cover"+logement.id} src={logement.cover} alt={logement.title} />
+                          <LocationTitle key={"title"+logement.id}>{logement.title}</LocationTitle>
+                      </LinkLocation>
+                  )
+              ))}
+          </LocationsSection>
+      )
+  }
 
-  return (
-      
-          <div>
-              <LinkLocation>
-                  <LocationImg >
-                  <LocationTitle></LocationTitle>
-                      
-                  </LocationImg>
-               </LinkLocation>
-          </div>
-    
-  )
-}
+
+
 
 
   
