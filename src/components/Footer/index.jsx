@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import LogoWhite from '../../assets/logoWhite.png'
 
 
-const FooterContainer = styled.div`
+const FooterContainer = styled.footer`
         background-color: black;
         color : white;
         padding: 3%;

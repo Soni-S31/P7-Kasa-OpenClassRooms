@@ -11,14 +11,14 @@ const LoaderWrapper = styled.div`
 `
 
 const LocationsSection = styled.section`
-    @media (min-width: 900px){
+        margin-top: 43px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         background-color: ${colors.secondary};
         border-radius: 25px;
         padding: 2%;
-    }
+    
 `
 
   const LinkLocation = styled(Link)`
