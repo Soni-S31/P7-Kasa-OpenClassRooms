@@ -2,6 +2,7 @@
 import colors from './colors'
 import styled, { keyframes } from 'styled-components'
 
+//loader pour useFetch (appel api)
 const rotate = keyframes`
   from {
     transform: rotate(0deg);
