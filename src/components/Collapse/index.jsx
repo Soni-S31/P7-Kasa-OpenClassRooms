@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import colors from '../../utils/style/colors'
+import Chevron from '../../assets/ChevronOpen.png'
+
 
 const CollapseDiv = styled.div`
     display: flex;
@@ -15,16 +17,23 @@ const Button = styled.button`
     align-items: center;
     border: none;
     outline: none;
+    display: flex;
+    justify-content: space-between;
 `
-const CollapseTitle = styled.h3`
+const CollapseTitle = styled.p`
     font-weight: 500;
     font-size: 24px;
-    line-height: 142.6%;
+    text-align: left;
     color: white;
     display: flex;
     align-items: left;
+    padding-left: 18px;
+    
 `
 const CollapseChevron = styled.img`
+    display: flex;
+    padding-right: 18px;
+
 `
 const ContentCollapse = styled.div`
     background-color: ${colors.secondary};
@@ -42,20 +51,25 @@ const Text = styled.p`
 `
 
 export default function Collapse (props) {
+   
+   
+   
+
+    
     
     return (
         <CollapseDiv>
-        <Button>
-            <CollapseTitle>
-            </CollapseTitle>
-            <CollapseChevron>
-            </CollapseChevron>      
+        <Button  >
+            <CollapseTitle >{props.title}</CollapseTitle>
+            <CollapseChevron src={Chevron}/>
+            
         </Button>
         <ContentCollapse>
-            <Text></Text>
+            <Text>{props.content}</Text>
         </ContentCollapse>
 
         </CollapseDiv>
+    
        
     );}
     

@@ -3,6 +3,7 @@ import BannerAbout from'../../assets/BannerAbout.png'
 import styled from 'styled-components';
 import Collapse from '../../components/Collapse';
 
+
 const Main = styled.main`
     background-color : white;
     padding: 0px 100px;
@@ -13,10 +14,11 @@ const Main = styled.main`
 const Banner = styled.article`
     display:flex;
     position:relative;
-    background: rgba(0,0,0,.5);
+    background: rgba(0,0,0,.9);
     border-radius: 25px;
     align-items: center;
     justify-content: center;
+    height : 223px;
     @media (max-width: 899px){
     height:110px;
     border-radius: 10px;
@@ -47,6 +49,8 @@ const Section = styled.section`
  `       
 
 function About() {
+  
+
   return (
     <Main>
       <Banner>
