@@ -1,7 +1,7 @@
 //import { useContext } from 'react'
 import { createGlobalStyle } from 'styled-components'
 //import { ThemeContext } from '../context'
-import './font.css'
+import './globalStyle.css'
 
 const StyledGlobalStyle = createGlobalStyle`
     * {

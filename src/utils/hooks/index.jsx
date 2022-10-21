@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 
-
+//appel api avec loader
 export function useFetch(url) {
   const [data, setData] = useState({})
   const [isLoading, setLoading] = useState(true)

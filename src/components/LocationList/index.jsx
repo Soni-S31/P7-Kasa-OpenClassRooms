@@ -13,21 +13,30 @@ const LoaderWrapper = styled.div`
 
 const LocationsSection = styled.section`
     margin-top: 43px;
+    margin-bottom: 43px;
     display: flex;
     flex-direction : row;
     flex-wrap : wrap;
     justify-content: space-around;
     background-color: ${colors.secondary};
     border-radius: 25px;
-    padding: 50px;
+    padding: 4%;
     box-sizing: border-box;
     width: 100%;
-    gap: 45px;
-    @media (max-width: 992px){
+    gap: 40px;
+    @media (max-width: 1085px){
+      gap: 40px;
+      padding: 4%;
+  
+    }
+    @media (max-width: 800px){
       gap: 25px;
-      padding: 25px;
-    }`
-
+      padding: 0px;
+      background-color : white;
+      border-radius: 10px;
+      
+    }
+    `
 
   const LinkLocation = styled(Link)`
     overflow: hidden;
@@ -35,18 +44,28 @@ const LocationsSection = styled.section`
     text-decoration : none;
     border-radius : 10px;
     width: 340px;
+    max-width : inherit;
+    min-width: 320px;
     height: 340px;
     display: flex;
     align-items: flex-end;
     background-size: cover;
-    background: linear-gradient(180deg, ${colors.primary} 0%, rgba(0, 0, 0, 0.5) 100%);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
     position : relative;
     justify-content : flex-end;
     align-items : flex-start;
     &:hover {
-    cursor: pointer;
+    cursor: pointer;}  
+    @media (max-width: 992px){
+      
   }
-  `
+    @media (max-width: 768px){
+      width: 100%;
+      min-width : 250px;
+      height: 250px;
+    max-width : inherit;
+  }`
+
  const LocationImg = styled.img`
       width: auto;
     height: 340px;
@@ -55,9 +74,16 @@ const LocationsSection = styled.section`
     position: absolute;
     z-index : 1;
     border-radius: 10px;
-    `
+    opacity: 0.9;
+
+    @media (max-width: 768px){
+      width: 100%;
+      min-width : 250px;
+      min-height: 250px;
+    max-width : inherit;
+  }`
+
   const LocationTitle = styled.h2`
-    
     margin-bottom: 5px;
     position: relative;
     z-index: 8;
@@ -66,7 +92,8 @@ const LocationsSection = styled.section`
     width: 250px;
     left: 20px;
     font-size: 18px;
-    `
+  `
+
 //appel APi pour les date avec UseFetch et du loader inclus
 export default function LocationList() {
   const { data, isLoading, error } = useFetch(`/logements.json`)

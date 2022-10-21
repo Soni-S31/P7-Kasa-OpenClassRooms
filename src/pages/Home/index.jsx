@@ -1,16 +1,12 @@
 import React from 'react'
 import BannerHome from '../../assets/bannerHome.png'
 import styled from 'styled-components'
-//import colors from '../../utils/style/colors';
 import LocationList from '../../components/LocationList';
-
-
 
 
 const Main = styled.main`
     background-color : white;
     padding: 0px 100px;
-   
     @media (max-width: 899px){
       padding : 0px 20px;
     }`
@@ -20,10 +16,8 @@ const Banner = styled.article`
     position:relative;
     background: rgba(0,0,0,.5);
     border-radius: 25px;
-    
     align-items: center;
     justify-content: center;
-    
     @media (max-width: 899px){
     height:110px;
     border-radius: 10px;
@@ -35,7 +29,6 @@ const ImgTitle = styled.img`
     margin: auto;
     border-radius: 25px;
     opacity: 0.6;
-    
     @media (max-width: 899px){
     height:110px;
     border-radius: 10px;
@@ -60,20 +53,6 @@ const TitleHome = styled.h2`
     right:25%;
     }`
 
-/*const LocationList = styled.section`
-display: flex;
-    margin : 20px 0px;
-    flex-direction : column;
-    justify-content: space-around;
-    padding: 50px;
-    background-color : ${colors.secondary};
-    border-radius: 25px;
-    &:hover {
-    cursor: pointer;
-  }
-`*/
-
-
 
 export default function Home() {
 
@@ -86,5 +65,3 @@ export default function Home() {
         <LocationList></LocationList>
     </Main>
   )}
-
- 
