@@ -1,7 +1,7 @@
 import React from 'react'
 import BannerAbout from'../../assets/BannerAbout.png'
 import styled from 'styled-components';
-import Collapse from '../../components/Collaps';
+import Collapse from '../../components/Collapse';
 
 const Main = styled.main`
     background-color : white;
@@ -35,16 +35,16 @@ const BannerImg = styled.img`
 }`
 
 const Section = styled.section`
-    
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin-top : 30px;
+    margin-bottom : 30px;
+    gap: 30px;
     `
  const CollapseContainer = styled.div`
-    margin-bottom: 31px;
-    width: 89%;
+    width: 85%;
  `       
-
-
 
 function About() {
   return (
