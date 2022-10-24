@@ -38,6 +38,7 @@
   justify-content : flex-end;
   align-items : flex-start;
   margin : 2%;
+  transition: transform .2s ease,-
 }
 .location_link :hover {
   cursor: pointer;

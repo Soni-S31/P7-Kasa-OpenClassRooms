@@ -12,10 +12,8 @@ export default function Collapse (props) {
   
   function toggleCollapse() {
     setActiveState(setActive === "" ? "active" : "");
-    setHeightState(
-      setActive === "active" ? "0px" : `${content.current.scrollHeight}px`
-    );
-    setRotateState(setRotate === "active" ? "open" : "close");
+    setHeightState(setActive === "active" ? "0px" : `${content.current.scrollHeight}px`);
+    setRotateState(setRotate === "open" ? "close" : "open");
 
   } 
   return (
@@ -23,7 +21,6 @@ export default function Collapse (props) {
           <button className={`collapse_btn ${setActive}`} onClick={toggleCollapse}  >
             <p className="collapse_title" >{props.title}</p>
             <img className={`${setRotate}`} src={open} alt="ouvrir" />
-
         </button>
     
           <div className="collapse_content" 
