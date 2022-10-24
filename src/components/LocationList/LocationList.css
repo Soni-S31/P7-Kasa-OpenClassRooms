@@ -14,7 +14,7 @@
   justify-content: space-evenly;
   background-color: #F7F7F7;
   border-radius: 25px;
-  padding: 4%;
+  /*padding: 4%;*/
   box-sizing: border-box;
   width: 100%;
   row-gap: 40px;
@@ -37,6 +37,7 @@
   position : relative;
   justify-content : flex-end;
   align-items : flex-start;
+  margin : 2%;
 }
 .location_link :hover {
   cursor: pointer;
