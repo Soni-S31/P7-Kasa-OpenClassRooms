@@ -13,6 +13,7 @@
     align-items: center;
     border: none;
     padding: 0;
+    justify-content: space-between;
 }
 .collapse_title{
     font-weight: 500;
@@ -36,8 +37,19 @@
     font-weight: 400;
     font-size: 24px;
     line-height: 142.6%;
-    padding : 18px;
+    padding : 27px 18px;
+    margin: 0;
 }
+/* Chevron*/
+.open {
+    padding-right: 18px;
+    
+}
+.close{
+    transform: rotate(180deg);
+    padding-left: 18px;
+}
+
 
 
 /********** Tablette **********/
