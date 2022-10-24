@@ -1,0 +1,97 @@
+/********** Desktop ************/
+/*Position du loader*/
+.loader_wrapper{
+  display: flex;
+  justify-content: center;
+}
+/*Section Location*/
+.location_container{
+  margin-top: 43px;
+  margin-bottom: 43px;
+  display: flex;
+  flex-direction : row;
+  flex-wrap : wrap;
+  justify-content: space-evenly;
+  background-color: #F7F7F7;
+  border-radius: 25px;
+  padding: 4%;
+  box-sizing: border-box;
+  width: 100%;
+  row-gap: 40px;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.location_link {
+  overflow: hidden;
+  flex-direction : column;
+  text-decoration : none;
+  border-radius : 10px;
+  width: 340px;
+  max-width : inherit;
+  min-width: 320px;
+  height: 340px;
+  display: flex;
+  align-items: flex-end;
+  background-size: cover;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+  position : relative;
+  justify-content : flex-end;
+  align-items : flex-start;
+}
+.location_link :hover {
+  cursor: pointer;
+}  
+.location_img {
+  width: auto;
+  height: 340px;
+  display: flex;
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  z-index : 1;
+  border-radius: 10px;
+  opacity: 0.9;
+}
+.location_title{
+  margin-bottom: 5px;
+  position: relative;
+  z-index: 1;
+  color: white;
+  height: 52px;
+  width: 250px;
+  left: 20px;
+  font-size: 18px;
+}
+
+/********** Tablette **********/
+/*Section Location*/
+ @media (max-width: 992px){
+.location_container{
+    gap: 40px;
+    padding: 4%;
+}
+ }
+
+/************* Mobile *******************/
+/*Section Location*/
+ @media (max-width: 768px){
+  .location_container{
+    gap: 25px;
+    padding: 0px;
+    background-color : white;
+    border-radius: 10px;
+}
+.location_link {
+    width: 100%;
+    min-width : 250px;
+    height: 250px;
+    max-width : inherit;
+}
+.location_img {
+    width: 100%;
+    min-width : 250px;
+    min-height: 250px;
+    max-width : inherit;
+}
+}

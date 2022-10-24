@@ -1,6 +1,4 @@
-//import { useContext } from 'react'
 import { createGlobalStyle } from 'styled-components'
-//import { ThemeContext } from '../context'
 import './globalStyle.css'
 
 const StyledGlobalStyle = createGlobalStyle`
