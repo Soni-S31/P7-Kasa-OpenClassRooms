@@ -43,6 +43,7 @@
 /* Chevron*/
 .open {
     padding-right: 18px;
+    
 }
 .close{
     transform: rotate(180deg);
@@ -58,7 +59,12 @@
     }
 .collapse_text{
     font-size: 18px;
-    
+}
+.open {
+    height: 30%;
+}
+.close{
+    height: 30%;
 }
     
 }
