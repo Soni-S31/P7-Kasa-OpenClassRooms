@@ -1,51 +1,55 @@
 /********** Desktop ************/
 .carousel {
-    overflow: hidden;
-    
-    
     position: relative;
-   
-    background-color: #FF6060;
-    border-radius: 25px;
-    
+    width: 100%;
+    height: 415px;
+    margin: auto;
+    margin-bottom: 30px;
 }
 
 .carousel_container {
     display: flex;
     transition: transform .5s ease;
-}
-
-.carousel_container_img {
-    width: auto;
-    height: auto;
-    position: relative;
-}
-
-.carousel_controls {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    display: flex;
-    width: calc(100% - 30px);
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 10px;
+    width: 100%;
+  height: 415px;
+  overflow: hidden;
+  border-radius: 25px;
 }
 
-.chevron {
+.carousel_img {
+    width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 25px;
+}
+
+
+
+.chevronLeft {
     width: 30px !important;
     height: auto !important;
-}
-
-.slideshow-idx {
+    margin-left: 5px ;
     position: absolute;
-    color: white;
-    text-align: center;
-    bottom: 10px;
-    width: 100%;
-    font-weight: bold;
+
+}
+.carousel_controls{
+    display: flex;
 }
 
+.chevronRight {
+    width: 30px !important;
+    height: auto !important;
+    margin-right: 5px ;
+    position: absolute;
+}
+.carousel_Index{
+    position: absolute;
+    left: 49%;
+    font-size: 18px;
+    bottom: 5px;
+    color: white;
+}
 
 /********** Tablette **********/
 
@@ -55,9 +59,7 @@
   
 /************* Mobile *******************/
 @media (max-width: 768px){
-    .slideshow-idx {
-        display: none;
-    }
+    
 
 }
 

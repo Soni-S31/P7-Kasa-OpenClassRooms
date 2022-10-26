@@ -31,13 +31,13 @@ export default function Carousel ({img}){
 
     return (
         <div className="carousel">
-            <div className="carousel_container_img" >
-            <img src={pictureActual}  alt="logement"  />
+            <div className="carousel_container" >
+            <img src={pictureActual}  alt="logement" className="carousel_img" />
             </div>
             {numberPicture !== 1 &&
             <div className='carousel_controls'>
-                <img src={previousIcon} className='chevron' alt="previous" onClick={() => previous(pictureActual)} />
-                <img src={nextIcon} className='chevron' alt="next" onClick={() => next(pictureActual)}/>
+                <img src={previousIcon} className='chevronLeft' alt="previous" onClick={() => previous(pictureActual)} />
+                <img src={nextIcon} className='chevronRight' alt="next" onClick={() => next(pictureActual)}/>
                 <div className='carousel_Index'>{img.indexOf(pictureActual)+1} / {numberPicture}</div>
 
             </div>
