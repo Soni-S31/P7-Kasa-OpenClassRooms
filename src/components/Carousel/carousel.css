@@ -1,0 +1,65 @@
+/********** Desktop ************/
+.carousel {
+    overflow: hidden;
+    
+    
+    position: relative;
+   
+    background-color: #FF6060;
+    border-radius: 25px;
+    
+}
+
+.carousel_container {
+    display: flex;
+    transition: transform .5s ease;
+}
+
+.carousel_container_img {
+    width: auto;
+    height: auto;
+    position: relative;
+}
+
+.carousel_controls {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    width: calc(100% - 30px);
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.chevron {
+    width: 30px !important;
+    height: auto !important;
+}
+
+.slideshow-idx {
+    position: absolute;
+    color: white;
+    text-align: center;
+    bottom: 10px;
+    width: 100%;
+    font-weight: bold;
+}
+
+
+/********** Tablette **********/
+
+@media (max-width: 992px){
+
+}
+  
+/************* Mobile *******************/
+@media (max-width: 768px){
+    .slideshow-idx {
+        display: none;
+    }
+
+}
+
+    
+

@@ -1,61 +1,56 @@
 import React from 'react'
 import './logement.css'
-import Gallery from "../../components/Gallery"
+import Carousel from "../../components/Carousel"
 //import Tags from "../../components/Tags"
 //import Rating from '../../components/Rating'
 //import CollapseLogement from '../../components/CollapseLogement'
-import { Loader } from '../../utils/style/Loader'
-import { useFetch } from '../../utils/hooks'
+import { useParams } from 'react-router-dom'
 
-export default function Logement () {
-    const { data, isLoading, error } = useFetch(`/logements.json`)
+
+function Logement () {
+  const data = require("../../logements.json")
+  function getLogementWithId (data, logementId) {
+      for (let logement of data) {
+          if (logement.id === logementId) { 
+              return logement
+          }}}
     
-    if (error) {
-      return <pre>{error}</pre>
-    }
+  const {logementId} = useParams()
+  const logement = getLogementWithId(data, logementId)
+  
+  return(
+    <main className='main_location'>
+      <section >
+        <div className='carousel_location'>
+          <Carousel img={logement.pictures} /> 
+        </div>
 
-
-    return(
-      <main>
-        {isLoading ? (
-            <div className="loader_wrapper">
-              <Loader data-testid="loader" /></div>
-          ) : (data.map((logement) => (
-            
-            <section key={logement.id}>
-              <Gallery img={logement.pictures} /> 
-           
-              <div className='location'>
-             <div className='location_header_title'>
+        <div className='location'>
+          <div className='location_header_title'>
                <h2 className='location_title'key={"title"+logement.id}>{logement.title}</h2>
                <p className='location_city'>{logement.location}</p>
                <div className='location_tags'>{logement.tags}</div>
-             </div>
+          </div>
    
-             <div className='location_host'>
-                 <div id="host" className='location_host_info'>
-                   <img key="host-picture" src={logement.host.picture} alt="Hôte" />
-                   <p key="host-name">{logement.host.name}</p>
-                 </div>
-                 <div className='host_rating'>
-                <div rating={logement.rating} key={logement.id}/>
+          <div className='location_host'>
+              <div id="host" className='location_host_info'>
+                <div className="host_picture">
+                  <img src={logement.host.picture} alt="" />
                 </div>
+                <div className='host_name'>{logement.host.name}</div>
+              </div>
+              <div className='host_rating'>
+                <div rating={logement.rating} key={logement.id}/></div>
              </div>
-              </div>
+          </div>
            
-              <div className='location_info'>
-               <div className='collapse_info' text={logement.description} id={"Description"} />
-               <div className='collapse_info' text={logement.equipments} id={"Equipements"} state={"open"}/>
-              </div>
-            </section>
-          )
-             ))}
-            
-      </main>
-      )
-    }
-
-
-  
+          <div className='location_info'>
+            <div className='collapse_info' text={logement.description} id={"Description"} />
+            <div className='collapse_info' text={logement.equipements} id={"Equipements"} />
+          </div>
+    </section>   
+  </main>
+      )}
+export default Logement
  
  

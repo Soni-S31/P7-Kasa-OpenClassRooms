@@ -3,8 +3,8 @@
     background-color : white;
     padding: 0px 6%;
 }
-/*Galery*/
-.galery_location{
+/*Carousel*/
+.carousel{
     width: 100%;
     display:flex;
     -o-object-fit: cover;
