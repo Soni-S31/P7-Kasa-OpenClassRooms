@@ -5,10 +5,10 @@ const StyledGlobalStyle = createGlobalStyle`
     * {
       font-family: 'Montserrat', Helvetica, sans-serif;
     }
-    body{
-      margin: 0px;
-      background-color : white;
+    .body{
+      margin:0px;
     }
+    
 `
 function GlobalStyle() {
   
