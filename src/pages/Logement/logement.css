@@ -16,7 +16,41 @@
 .location_header{
     display: flex;
     flex-direction: column;
+    padding-bottom: 20px;
+    
 }
+.location_header_title{
+    color: #FF6060;
+    font-size: 36px;
+    line-height: 142,6%;
+    font-weight: 500;
+    margin: 0;
+    width: 80%;
+}
+.location_header_city{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 142,6%;
+    color: #FF6060;
+}
+.location_header_tags{
+    display: flex;
+    padding: 0px;
+}
+.location_header_tags_tag{
+    background-color: #FF6060;
+  list-style: none;
+  color: white;
+  padding: 3px 20px 3px 20px;
+  margin-right: 15px;
+  border-radius: 10px;
+  font-size: 14px;
+  height: 25px;
+  align-items: center;
+  display: flex;
+}
+
+
 /*partie droite*/
 .location_host{
     display: flex;
@@ -33,8 +67,9 @@
 .main_location {
     background-color : white;
     padding : 0px 20px;
-
-
+}
+.location_header_title{
+    font-size: 24px;
 }
 
 
@@ -45,4 +80,7 @@
 /************* Mobile *******************/
 
 @media (max-width: 768px){  
+.location_header_title{
+    font-size: 18px;
+}
 }

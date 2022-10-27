@@ -1,7 +1,7 @@
 /********** Desktop ************/
 .carousel {
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
 }
 
 .carousel_container {
@@ -10,6 +10,7 @@
     width: 100%;
     height: 415px;
     border-radius: 25px;
+    background-color: black;
 }
 
 .carousel_img {
@@ -19,24 +20,22 @@
   border-radius: 25px;
 }
 
-
+.carousel_controls{
+    display: flex;
+    align-items: center;
+}
 
 .chevronLeft {
     width: 30px ;
     height: auto;
     left: 24px ;
     position: absolute;
-
-}
-.carousel_controls{
-    display: flex;
-    align-items: center;
 }
 
 .chevronRight {
     width: 30px ;
     height: auto;
-    right: 23px ;
+    right: 24px ;
     position: absolute;
 }
 .carousel_Index{
@@ -51,10 +50,10 @@
 
 @media (max-width: 992px){
 .chevronLeft {
-    width: 3%;
+    width: 5%;
 }
 .chevronRight {
-    width: 3%;
+    width: 5%;
 }
 }
   

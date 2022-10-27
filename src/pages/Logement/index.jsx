@@ -26,10 +26,12 @@ function Logement () {
         </div>
 
         <div className='location'>
-          <div className='location_header_title'>
-               <h2 className='location_title'key={"title"+logement.id}>{logement.title}</h2>
-               <p className='location_city'>{logement.location}</p>
-               <div className='location_tags'>{logement.tags}</div>
+          <div className='location_header'>
+               <h2 className='location_header_title'key={"title"+logement.id}>{logement.title}</h2>
+               <p className='location_header_city'>{logement.location}</p>
+               <ul className='location_header_tags'>{logement.tags.map((tag)=>
+                 <li className='location_header_tags_tag' key={tag.index}>{tag}</li>)}
+                </ul>
           </div>
    
           <div className='location_host'>
@@ -37,7 +39,7 @@ function Logement () {
                 <div className="host_picture">
                   <img src={logement.host.picture} alt="" />
                 </div>
-                <div className='host_name'>{logement.host.name}</div>
+                <ul className='host_name'>{logement.host.name}</ul>
               </div>
               <div className='host_rating'>
                 <div rating={logement.rating} key={logement.id}/></div>
