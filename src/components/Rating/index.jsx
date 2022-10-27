@@ -1,4 +1,5 @@
-import {FaStar} from 'react-icons/fa'
+import {  FaStar} from 'react-icons/fa'
+import "./stars.css"
 
 function Rating ({rate}){
     const maxRate = 5;
@@ -10,7 +11,7 @@ function Rating ({rate}){
         starArray.push(<div className='rate_star'><FaStar /></div>)
     }
     for (let i=0; i<greyStar; i++){
-        starArray.push(<div className='rate_greyStar'><FaStar /></div>)
+        starArray.push(<div className='rate_greyStar'><FaStar/></div>)
     }
 
     return(

@@ -1,9 +1,7 @@
 import React from 'react'
 import './logement.css'
 import Carousel from "../../components/Carousel"
-//import Tags from "../../components/Tags"
 import Rating from '../../components/Rating'
-//import CollapseLogement from '../../components/CollapseLogement'
 import { useParams } from 'react-router-dom'
 
 
@@ -25,7 +23,7 @@ function Logement () {
         <div className='carousel_location'>
           <Carousel img={logement.pictures} /> 
         </div>
-
+        
         <div className='location'>
           <div className='location_header'>
                <h2 className='location_header_title'key={"title"+logement.id}>{logement.title}</h2>
@@ -46,12 +44,12 @@ function Logement () {
                 <Rating rate={parseInt(logement.rating)} />
              </div>
           </div>
-           
+           </div>
           <div className='location_info'>
             <div className='collapse_info' text={logement.description} id={"Description"} />
             <div className='collapse_info' text={logement.equipements} id={"Equipements"} />
           </div>
-          </div>
+        
     </section>   
   </main>
       )}
