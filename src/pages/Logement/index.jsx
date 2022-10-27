@@ -3,7 +3,7 @@ import './logement.css'
 import Carousel from "../../components/Carousel"
 import Rating from '../../components/Rating'
 import { useParams } from 'react-router-dom'
-
+import Collapse from '../../components/Collapse/collapse'
 
 
 function Logement () {
@@ -46,9 +46,16 @@ function Logement () {
           </div>
            </div>
           <div className='location_info'>
-            <div className='collapse_info' text={logement.description} id={"Description"} />
-            <div className='collapse_info' text={logement.equipements} id={"Equipements"} />
-          </div>
+            <div className='collapse_container'>
+                <Collapse 
+                title= "Description"
+                content= {logement.description}
+                />
+            </div>
+            
+            
+            </div>
+            
         
     </section>   
   </main>

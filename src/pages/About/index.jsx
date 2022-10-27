@@ -1,6 +1,6 @@
 import React from 'react'
 import BannerAbout from'../../assets/BannerAbout.png'
-import Collapse from '../../components/Collapse/collapseAbout';
+import Collapse from '../../components/Collapse/collapse';
 import './about.css'
 
 
