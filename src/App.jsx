@@ -4,7 +4,7 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import Error from './components/Error'
 import About from './pages/About'
-import Logement from './pages/Logement/index'
+import Logement from './pages/Logement'
 import GlobalStyle from './utils/style/GlobalStyle'
 
 
@@ -19,6 +19,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/logement/:logementId" element={<Logement />}/>
             <Route path="/*" element={<Error />} />
+            <Route path="/logement/:logementId*" element={<Error/>} />
           </Routes>
           <Footer />
           

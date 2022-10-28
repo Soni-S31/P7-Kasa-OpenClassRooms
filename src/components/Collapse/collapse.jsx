@@ -1,6 +1,5 @@
 import React, { useState, useRef } from 'react'
 import open from '../../assets/ChevronOpen.png'
-
 import './collapse.css'
 
 

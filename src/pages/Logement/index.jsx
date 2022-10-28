@@ -1,6 +1,6 @@
 import React from 'react'
 import './logement.css'
-import Carousel from "../../components/Carousel"
+import Carousel from "../../components/Carousel/carousel"
 import Rating from '../../components/Rating'
 import { useParams } from 'react-router-dom'
 import Collapse from '../../components/Collapse/collapse'
