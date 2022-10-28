@@ -52,9 +52,20 @@ function Logement () {
                 content= {logement.description}
                 />
             </div>
+            <div className='collapse_container'>
+                <Collapse 
+                title="Equipement"
+                content={
+                    <ul>
+                        {logement.equipments.map((equipment) => 
+                        <li key={equipment}>{equipment}</li>)}
+                    </ul>
+                }
+            />
+              
+              </div>
             
-            
-            </div>
+          </div>
             
         
     </section>   

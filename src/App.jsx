@@ -4,7 +4,7 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import Error from './components/Error'
 import About from './pages/About'
-import Logement from './pages/Logement'
+import Logement from './pages/Logement/index'
 import GlobalStyle from './utils/style/GlobalStyle'
 
 

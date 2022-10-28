@@ -38,7 +38,7 @@
 @media (max-width: 992px){
 .main_about {
     background-color : white;
-    padding : 0px 20px;
+    padding : 0px 40px;
 }
 /*Banner*/
 .banner{
@@ -64,6 +64,9 @@
 /************* Mobile *******************/
 
 @media (max-width: 768px){
+.main_about {
+    padding : 0px 30px;
+}
 /*Section*/
 .section_about {
     gap: 20px;

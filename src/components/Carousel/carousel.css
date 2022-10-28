@@ -50,16 +50,21 @@
 
 @media (max-width: 992px){
 .chevronLeft {
-    width: 5%;
+    width: 4%;
 }
 .chevronRight {
-    width: 5%;
+    width: 4%;
 }
 }
   
 /************* Mobile *******************/
 @media (max-width: 768px){
-    
+.chevronLeft {
+    width: 5%;
+}
+.chevronRight {
+    width: 5%;
+}
 
 }
 
