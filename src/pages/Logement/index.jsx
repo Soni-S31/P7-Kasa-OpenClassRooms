@@ -4,27 +4,27 @@ import Carousel from "../../components/Carousel/carousel"
 import Rating from '../../components/Rating'
 import { useParams, Navigate} from 'react-router-dom'
 import Collapse from '../../components/Collapse/collapse'
-//import Error from '../../components/Error'
 
 
 function Logement () {
+  //récuprération des données
   const data = require("../../logements.json")
-  /*récupération du bon logment*/
-  function getLogementWithId (data, logementId) {
+  //identification du logment selectionné par id
+    function getLogementWithId (data, logementId) {
       for (let logement of data) {
-          if (logement.id === logementId) { 
-              return logement
-          }}}
+        if (logement.id === logementId) { 
+        return logement
+    }}}
     
   const {logementId} = useParams()
   const logement = getLogementWithId(data, logementId)
-  
-  
+
+//si logement existant retourne la fiche logement
   return(
-    
     <main className='main_location'>
       { logement ? (
       <section >
+        
         <div className='carousel_location'>
           <Carousel img={logement.pictures} /> 
         </div>
@@ -37,20 +37,21 @@ function Logement () {
                  <li className='location_header_tags_tag' key={tag}>{tag}</li>)}
                 </ul>
           </div>
-   
+        
           <div className='location_host'>
-              <div id="host" className='location_host_info'>
+            <div id="host" className='location_host_info'>
               <div className='host_name'>{logement.host.name}</div>
                 <div className="host_picture">
                   <img src={logement.host.picture} alt="" />
                 </div>
-              </div>
-              <div className='host_rating'> 
+            </div>
+            <div className='host_rating'> 
                 <Rating rating={logement.rating} />
-             </div>
-          </div>
-           </div>
-          <div className='location_info'>
+            </div>
+        </div>
+        </div>
+
+        <div className='location_info'>
             <div className='collapse_container'>
                 <Collapse 
                 title= "Description"
@@ -61,22 +62,18 @@ function Logement () {
                 <Collapse 
                 title="Equipement"
                 content={
-                    <ul>
-                        {logement.equipments.map((equipment) => 
-                        <li key={equipment}>{equipment}</li>)}
-                    </ul>
-                }
-            />
-              
-              </div>
+                  <ul>{logement.equipments.map((equipment) => 
+                    <li key={equipment}>{equipment}</li>)}
+                  </ul>}
+                />
+            </div>
             
-          </div>
+        </div>
             
-        
-    </section>   
-    /*si logement inexistant retourne page error*/
+      </section>   
+//si logement inexistant retourne page error
       ) : <Navigate replace to="../../components/Error"/> }
-  </main>
+    </main>
       )}
 export default Logement
  

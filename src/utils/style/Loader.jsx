@@ -1,5 +1,4 @@
 
-import colors from './colors'
 import styled, { keyframes } from 'styled-components'
 
 //loader pour useFetch (appel api)
@@ -14,7 +13,7 @@ const rotate = keyframes`
 
 export const Loader = styled.div`
   padding: 10px;
-  border: 6px solid ${colors.primary};
+  border: 6px solid #FF6060;
   border-bottom-color: transparent;
   border-radius: 22px;
   animation: ${rotate} 1s infinite linear;

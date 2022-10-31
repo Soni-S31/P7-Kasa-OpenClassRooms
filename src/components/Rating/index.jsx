@@ -2,6 +2,8 @@ import React from 'react';
 import "./stars.css"
 import redstar from "../../assets/redstar.png"
 import greystar from "../../assets/greystar.png"
+
+
 const Rating = ({ rating }) => {
 const stars = [1, 2, 3, 4, 5];
   
@@ -11,16 +13,16 @@ const stars = [1, 2, 3, 4, 5];
           rating >= star ? (
             <img
               key={star.toString()}
-              className="rating__icon"
+              className="rating_icon"
               src={redstar}
-              alt=""
+              alt="star"
             />
           ) : (
             <img
               key={star.toString()}
-              className="rating__icon"
+              className="rating_icon"
               src={greystar}
-              alt=""
+              alt="star"
             />
           )
         )}
@@ -28,4 +30,4 @@ const stars = [1, 2, 3, 4, 5];
     );
   };
   
-  export default Rating;
+export default Rating;

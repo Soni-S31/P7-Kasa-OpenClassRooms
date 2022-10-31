@@ -51,15 +51,7 @@
     -o-object-fit: cover;
        object-fit: cover;
 }
-
-
-
 }
-
-
-
-
-
 
 /************* Mobile *******************/
 
@@ -70,7 +62,5 @@
 /*Section*/
 .section_about {
     gap: 20px;
-}
-
-    
+}  
 }
