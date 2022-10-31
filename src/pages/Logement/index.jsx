@@ -4,6 +4,7 @@ import Carousel from "../../components/Carousel/carousel"
 import Rating from '../../components/Rating'
 import { useParams } from 'react-router-dom'
 import Collapse from '../../components/Collapse/collapse'
+import Error from '../../components/Error'
 
 
 function Logement () {
@@ -17,6 +18,10 @@ function Logement () {
   const {logementId} = useParams()
   const logement = getLogementWithId(data, logementId)
   
+  if (!logement){
+    return <Error/>
+  }
+  else{
   return(
     <main className='main_location'>
       <section >
@@ -70,7 +75,7 @@ function Logement () {
         
     </section>   
   </main>
-      )}
+      )}}
 export default Logement
  
  
