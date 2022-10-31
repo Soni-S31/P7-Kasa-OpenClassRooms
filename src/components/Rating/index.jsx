@@ -1,26 +1,31 @@
-import {  FaStar} from 'react-icons/fa'
+import React from 'react';
 import "./stars.css"
-
-function Rating ({rate}){
-    const maxRate = 5;
-    const star = rate;
-    const greyStar = maxRate - star
-    let starArray = []
-
-    for (let i=0; i<star; i++){
-        starArray.push(<div className='rate_star'><FaStar /></div>)
-    }
-    for (let i=0; i<greyStar; i++){
-        starArray.push(<div className='rate_greyStar'><FaStar/></div>)
-    }
-
-    return(
-        <div className='rating'>
-            {starArray}
-        </div>
-    )
-
-
-
-}
-export default Rating
+import redstar from "../../assets/redstar.png"
+import greystar from "../../assets/greystar.png"
+const Rating = ({ rating }) => {
+const stars = [1, 2, 3, 4, 5];
+  
+    return (
+      <div className="rating">
+        {stars.map((star) =>
+          rating >= star ? (
+            <img
+              key={star.toString()}
+              className="rating__icon"
+              src={redstar}
+              alt=""
+            />
+          ) : (
+            <img
+              key={star.toString()}
+              className="rating__icon"
+              src={greystar}
+              alt=""
+            />
+          )
+        )}
+      </div>
+    );
+  };
+  
+  export default Rating;

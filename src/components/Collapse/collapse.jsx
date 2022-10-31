@@ -18,14 +18,14 @@ export default function Collapse (props) {
   return (
         <div className="collapse_div">
           <button className={`collapse_btn ${setActive}`} onClick={toggleCollapse}  >
-            <p className="collapse_title" >{props.title}</p>
+            <div className="collapse_title" >{props.title}</div>
             <img className={`${setRotate}`} src={open} alt="ouvrir" />
         </button>
     
           <div className="collapse_content" 
           ref={content}
           style={{ maxHeight: `${setHeight}` }}>
-            <p className="collapse_text">{props.content}</p>
+            <div className="collapse_text">{props.content}</div>
           </div>
         </div>
     

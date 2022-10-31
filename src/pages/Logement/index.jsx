@@ -32,9 +32,9 @@ function Logement () {
         <div className='location'>
           <div className='location_header'>
                <h2 className='location_header_title'key={"title"+logement.id}>{logement.title}</h2>
-               <p className='location_header_city'>{logement.location}</p>
+               <div className='location_header_city' key={"location"+logement.id}>{logement.location}</div>
                <ul className='location_header_tags'>{logement.tags.map((tag)=>
-                 <li className='location_header_tags_tag' key={tag.index}>{tag}</li>)}
+                 <li className='location_header_tags_tag' key={tag}>{tag}</li>)}
                 </ul>
           </div>
    
@@ -45,8 +45,8 @@ function Logement () {
                   <img src={logement.host.picture} alt="" />
                 </div>
               </div>
-              <div className='host_rating'>
-                <Rating rate={parseInt(logement.rating)} />
+              <div className='host_rating'> 
+                <Rating rating={logement.rating} />
              </div>
           </div>
            </div>
@@ -74,6 +74,7 @@ function Logement () {
             
         
     </section>   
+    /*si logement inexistant retourne page error*/
       ) : <Navigate replace to="../../components/Error"/> }
   </main>
       )}
