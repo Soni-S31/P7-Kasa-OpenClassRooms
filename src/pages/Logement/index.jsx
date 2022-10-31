@@ -2,13 +2,14 @@ import React from 'react'
 import './logement.css'
 import Carousel from "../../components/Carousel/carousel"
 import Rating from '../../components/Rating'
-import { useParams } from 'react-router-dom'
+import { useParams, Navigate} from 'react-router-dom'
 import Collapse from '../../components/Collapse/collapse'
-import Error from '../../components/Error'
+//import Error from '../../components/Error'
 
 
 function Logement () {
   const data = require("../../logements.json")
+  /*récupération du bon logment*/
   function getLogementWithId (data, logementId) {
       for (let logement of data) {
           if (logement.id === logementId) { 
@@ -18,12 +19,11 @@ function Logement () {
   const {logementId} = useParams()
   const logement = getLogementWithId(data, logementId)
   
-  if (!logement){
-    return <Error/>
-  }
-  else{
+  
   return(
+    
     <main className='main_location'>
+      { logement ? (
       <section >
         <div className='carousel_location'>
           <Carousel img={logement.pictures} /> 
@@ -74,8 +74,9 @@ function Logement () {
             
         
     </section>   
+      ) : <Navigate replace to="../../components/Error"/> }
   </main>
-      )}}
+      )}
 export default Logement
  
  
