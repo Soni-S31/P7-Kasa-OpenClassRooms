@@ -56,9 +56,9 @@
 
 @media (max-width: 768px){
 .main-home {
-    margin: 20px 20px;
+    margin: 15px 15px;
     width: 85%;
-    padding: 20px;
+    padding : 0px 15px;
 }
 .banner_title{
     font-size: 24px;
@@ -70,18 +70,5 @@
     }
 
  }
-
-
-/************* Mobile *******************/
-
-@media (max-width: 768px){  
-.main-home{
-    padding : 0px 15px;
-}
-
-}
-
-
-
 
 

@@ -22,7 +22,7 @@
     display: flex;
     align-items: left;
     padding-left: 18px;
-    line-height: 142.6%;
+    line-height: 26px;
 }
 .collapse_content{
     background-color: #F7F7F7;
@@ -82,11 +82,13 @@
 }
 
 .collapse_title{
-        font-size: 13px;
-        padding-left: 11px;
+    font-size: 13px;
+    padding-left: 11px;
  }
 .collapse_text{
     font-size: 12px;
+    font-weight: 400;
+    line-height: 17px;
     padding-left: 11px;
     padding-right: 11px;
     padding-top: 15px;

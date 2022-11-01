@@ -40,10 +40,8 @@ function Logement () {
         
           <div className='location_host'>
             <div id="host" className='location_host_info'>
-              <div className='host_name'>{logement.host.name}</div>
-                <div className="host_picture">
-                  <img src={logement.host.picture} alt="" />
-                </div>
+              <div className='host_name'>{logement.host.name}</div> 
+              <img className='host_picture' src={logement.host.picture} alt="" />
             </div>
             <div className='host_rating'> 
                 <Rating rating={logement.rating} />

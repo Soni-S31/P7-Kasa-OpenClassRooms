@@ -23,7 +23,7 @@
 .location_header_title{
     color: #FF6060;
     font-size: 36px;
-    line-height: 142,6%;
+    line-height: 51px;
     font-weight: 500;
     margin: 0;
     width: 80%;
@@ -31,12 +31,14 @@
 .location_header_city{
     font-size: 18px;
     font-weight: 500;
-    line-height: 142,6%;
+    line-height: 26px;
     color: #FF6060;
 }
 .location_header_tags{
     display: flex;
     padding: 0px;
+    margin-top: 23px;
+    margin-bottom: 23px;
 }
 .location_header_tags_tag{
     background-color: #FF6060;
@@ -69,11 +71,8 @@
     font-size: 18px;
     display: flex;
 }
-.host_picture{
-    border-radius: 50%;
-    width: 64px;
-}
-.host_picture img{
+
+.host_picture {
     border-radius: 50%;
     width: 64px;
 }
@@ -84,6 +83,7 @@
     display: flex;
     width: inherit;
     gap: 76px;
+    margin-bottom: 86px;
 }
 .collapse_container{
     display: flex;
@@ -100,6 +100,10 @@
     margin: 20px 20px;
     width: 85%;
     padding: 20px;}
+.location_header{
+    width: 100%;
+    padding-bottom: 0;
+}
     
 .location_header_title{
     font-size: 24px;
@@ -129,6 +133,7 @@
     margin: 20px 15px;
 }
 
+
 .location_header_title{
     font-size: 18px;
     width: 100%;
@@ -144,6 +149,7 @@
     flex-wrap: wrap;
     gap: 10px 0px;
     margin-top: 10px;
+    margin-bottom: 0px;
 }
 .location_header_tags_tag{
     font-size: 10px;
@@ -151,18 +157,19 @@
 .location_host{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+.location_host_info{
+    justify-content: flex-end;
 }
 .host_name{
     font-size: 12px;
-    
+    margin-right: 5px;
+    display: flex;
 }
-
-.host_picture img{
-    width: 60%;
-    height: 60%;
+.host_picture{
+    width: 30%; 
 }
-
-
 .location_info{
     flex-direction: column;
 }

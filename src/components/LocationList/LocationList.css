@@ -46,8 +46,6 @@
   position: absolute;
   z-index: 1;
   color: white;
-  height: 52px;
-  
   margin-left: 20px;
   font-size: 18px;
   
@@ -77,6 +75,6 @@
 
 }
 .location_title{
-  width: 80%;
+  width: 85%;
 }
 }
