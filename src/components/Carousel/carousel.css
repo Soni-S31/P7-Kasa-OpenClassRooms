@@ -49,11 +49,17 @@
 
 @media (max-width: 992px){
 .chevronLeft {
-    width: 4%;
+    width: 3%;
+    left: 6px;
 }
 .chevronRight {
-    width: 4%;
+    width: 3%;
+    right: 6px;
 }
+.carousel_Index{
+    font-size: 12px;
+    bottom: 6px;
+}    
 }
   
 /************* Mobile *******************/
@@ -68,19 +74,6 @@
 .carousel_img{
     border-radius: 10px;
 }
-.chevronLeft {
-    width: 4%;
-    left: 6px;
-}
-.chevronRight {
-    width: 4%;
-    right: 6px;
-}
-.carousel_Index{
-    font-size: 12px;
-    bottom: 6px;
-}
-
 }
 
     
