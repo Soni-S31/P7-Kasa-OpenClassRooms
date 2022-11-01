@@ -29,21 +29,26 @@
     margin-bottom : 30px;
     gap: 30px;
 }
-.collapse_container{
+.collapse_about_container{
     width: 85%;
+    font-size: 24px;
 }
+
 
 
 /********** Tablette **********/
 @media (max-width: 992px){
 .main_about {
     background-color : white;
-    padding : 0px 40px;
+    margin: 20px 20px;
+    width: 85%;
+    padding: 20px;
 }
 /*Banner*/
 .banner{
     height:110px;
     border-radius: 10px;
+
 }
 .banner_img{
     height:110px;
@@ -51,13 +56,16 @@
     -o-object-fit: cover;
        object-fit: cover;
 }
+.collapse_about_container{
+    font-size: 20px;
+}
 }
 
 /************* Mobile *******************/
 
 @media (max-width: 768px){
 .main_about {
-    padding : 0px 30px;
+    padding : 0px 15px;
 }
 /*Section*/
 .section_about {

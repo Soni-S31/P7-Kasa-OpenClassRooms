@@ -1,8 +1,8 @@
 /********** Desktop ************/
 .main_location {
     background-color : white;
-    padding: 0 6%;
-}
+    padding: 0px 6%;}
+    
 /*Carousel*/
 .carousel{
     display:flex;
@@ -67,7 +67,7 @@
     margin-right: 10px;
     color: #FF6060;
     font-size: 18px;
-    
+    display: flex;
 }
 .host_picture{
     border-radius: 50%;
@@ -89,14 +89,18 @@
     display: flex;
     flex-direction: column;
     width: 50%;
+    font-size: 18px;
+    font-weight: 400;
 }
 
 /********** Tablette **********/
 @media (max-width: 992px){
 .main_location {
     background-color : white;
-    padding : 0px 20px;
-}
+    margin: 20px 20px;
+    width: 85%;
+    padding: 20px;}
+    
 .location_header_title{
     font-size: 24px;
 }
@@ -106,6 +110,9 @@
 }
 .location_host{
     flex-direction: row-reverse;
+}
+.location_info{
+    gap: 20px;
 }
 
 
@@ -117,20 +124,52 @@
 /************* Mobile *******************/
 
 @media (max-width: 768px){  
+.main_location {
+    padding : 0px 15px;
+    margin: 20px 15px;
+}
+
 .location_header_title{
     font-size: 18px;
     width: 100%;
+    line-height: 25px;
 }
 .location_header_city{
     font-size: 14px;
-    margin-top: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     line-height: 142.6%;
 }
 .location_header_tags{
     flex-wrap: wrap;
     gap: 10px 0px;
+    margin-top: 10px;
 }
 .location_header_tags_tag{
     font-size: 10px;
 }
+.location_host{
+    display: flex;
+    justify-content: space-between;
+}
+.host_name{
+    font-size: 12px;
+    
+}
+
+.host_picture img{
+    width: 60%;
+    height: 60%;
+}
+
+
+.location_info{
+    flex-direction: column;
+}
+.collapse_container{
+    width: 100%;
+    padding-top: 20px;
+}
+
+
 }

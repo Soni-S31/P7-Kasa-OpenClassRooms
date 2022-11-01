@@ -25,7 +25,9 @@ export default function Collapse (props) {
           <div className="collapse_content" 
           ref={content}
           style={{ maxHeight: `${setHeight}` }}>
+            <div className='collapse_content_container'>
             <div className="collapse_text">{props.content}</div>
+            </div>
           </div>
         </div>
     

@@ -5,14 +5,13 @@ import Footer from './components/Footer'
 import Error from './components/Error'
 import About from './pages/About'
 import Logement from './pages/Logement'
-import GlobalStyle from './utils/style/GlobalStyle'
-
+//import GlobalStyle from './utils/style/GlobalStyle'
+import  './utils/style/globalStyle.css'
 
 
 function App() {
   return (
     <div className="App">
-      <GlobalStyle />
           <Header />
           <Routes>
             <Route path="/" element={<Home />} errorElement={<Error/>}/>

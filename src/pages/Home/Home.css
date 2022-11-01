@@ -33,7 +33,9 @@
 /********** Tablette **********/
  @media (max-width: 992px){
  .main-home {
-      padding : 0px 20px;
+    margin: 20px 20px;
+    width: 85%;
+    padding: 20px;
 }
 .banner {
     height:110px;
@@ -53,6 +55,11 @@
 /************* Mobile *******************/
 
 @media (max-width: 768px){
+.main-home {
+    margin: 20px 20px;
+    width: 85%;
+    padding: 20px;
+}
 .banner_title{
     font-size: 24px;
     line-height:100%;
@@ -65,12 +72,14 @@
  }
 
 
+/************* Mobile *******************/
 
+@media (max-width: 768px){  
+.main-home{
+    padding : 0px 15px;
+}
 
-
-
- /************* Mobile *******************/
-
+}
 
 
 
