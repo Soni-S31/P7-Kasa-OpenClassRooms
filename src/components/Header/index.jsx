@@ -7,7 +7,6 @@ import './header.css'
 
 function Header() {
   
-    
 return (
   <header className='header_container'>
     <Link to="/">

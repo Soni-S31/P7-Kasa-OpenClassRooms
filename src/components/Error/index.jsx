@@ -12,6 +12,5 @@ export default function Error() {
             <Link className="backhome" to="/">Retourner sur la page d'accueil</Link>
         </div>
     )
-
-  }
+}
   

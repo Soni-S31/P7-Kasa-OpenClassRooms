@@ -20,8 +20,6 @@
     margin-bottom: 30px;
 }
 
-
-
 /********** Tablette **********/
 @media (max-width: 992px){
 .footer{
@@ -31,7 +29,6 @@
 .footer_info{
     font-size: 12px;
 }
-
 }
 
 

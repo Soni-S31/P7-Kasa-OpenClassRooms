@@ -118,15 +118,9 @@
 .location_info{
     gap: 20px;
 }
-
-
-
 }
 
-
-
 /************* Mobile *******************/
-
 @media (max-width: 768px){  
 .main_location {
     padding : 0px 15px;
@@ -181,6 +175,4 @@
     width: 100%;
     padding-top: 20px;
 }
-
-
 }

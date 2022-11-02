@@ -72,7 +72,8 @@ function Logement () {
 //si logement inexistant retourne page error
       ) : <Navigate replace to="../../components/Error"/> }
     </main>
-      )}
+      )
+}
 export default Logement
  
  

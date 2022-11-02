@@ -5,7 +5,7 @@ import greystar from "../../assets/greystar.png"
 
 
 const Rating = ({ rating }) => {
-const stars = [1, 2, 3, 4, 5];
+  const stars = [1, 2, 3, 4, 5];
   
     return (
       <div className="rating">
@@ -27,7 +27,6 @@ const stars = [1, 2, 3, 4, 5];
           )
         )}
       </div>
-    );
-  };
-  
+    )
+}
 export default Rating;

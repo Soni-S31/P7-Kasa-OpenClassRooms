@@ -11,7 +11,6 @@ function Footer() {
         <div className='footer_info'>© 2020 Kasa. All rights reserved </div>
     </footer>
     )
-  }
-  
-  export default Footer
+}
+export default Footer
   
