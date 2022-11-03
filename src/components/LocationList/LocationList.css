@@ -75,4 +75,8 @@
 .location_title{
   width: 85%;
 }
+.location_link :hover{
+  transform: scale(1);
+}
+
 }

@@ -74,6 +74,7 @@ text-align: right;
 	align-items: center;
     display: flex;
     margin : 15px 15px;
+    width: 80%;
 }
 .navbar{
     width: 70%;
