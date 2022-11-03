@@ -1,4 +1,4 @@
-
+import './Loader.css'
 import styled, { keyframes } from 'styled-components'
 
 //loader pour useFetch (appel api)
@@ -12,10 +12,4 @@ const rotate = keyframes`
 `
 
 export const Loader = styled.div`
-  padding: 10px;
-  border: 6px solid #FF6060;
-  border-bottom-color: transparent;
-  border-radius: 22px;
-  animation: ${rotate} 1s infinite linear;
-  height: 0;
-  width: 0;`
+  animation: ${rotate} 1s infinite linear;`

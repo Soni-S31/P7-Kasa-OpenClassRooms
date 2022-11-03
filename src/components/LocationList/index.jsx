@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import React from 'react';
 import { useFetch } from '../../utils/hooks'
 import { Loader } from '../../utils/style/Loader'
+import '../../utils/style/Loader.css'
 import './LocationList.css'
 
 //appel APi pour les datas avec UseFetch et du loader inclus
