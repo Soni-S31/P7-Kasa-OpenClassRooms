@@ -20,7 +20,7 @@
     text-align: left;
     color: white;
     display: flex;
-    align-items: left;
+    align-items:flex-start;
     padding-left: 18px;
     line-height: 26px;
 }

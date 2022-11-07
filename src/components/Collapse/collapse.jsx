@@ -13,7 +13,6 @@ export default function Collapse (props) {
     setActiveState(setActive === "" ? "active" : "");
     setHeightState(setActive === "active" ? "0px" : `${content.current.scrollHeight}px`);
     setRotateState(setRotate === "open" ? "close" : "open");
-
   } 
   return (
         <div className="collapse_div">
@@ -30,9 +29,7 @@ export default function Collapse (props) {
             </div>
           </div>
         </div>
-    
-       
     )}
-    
+
   
     

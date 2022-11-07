@@ -32,7 +32,7 @@ export default function Carousel ({img}){
     return (
         <div className="carousel">
             <div className="carousel_container" >
-            <img src={pictureActual}  alt="logement" className="carousel_img" />
+            <img src={pictureActual}  alt={pictureActual.title} className="carousel_img" />
             </div>
             {numberPicture !== 1 &&
             <div className='carousel_controls'>
