@@ -98,7 +98,7 @@
 .main_location {
     background-color : white;
     margin: 20px 20px;
-    width: 85%;
+    width: 90%;
     padding: 20px;}
 .location_header{
     width: 100%;
@@ -123,9 +123,9 @@
 /************* Mobile *******************/
 @media (max-width: 768px){  
 .main_location {
-    padding : 0px 5px;
-    margin: 0px 15px;
-
+    margin: 15px 15px;
+    width: 83%;
+    padding : 0px 10px;
 }
 .location_header{
     padding-bottom: 5px;

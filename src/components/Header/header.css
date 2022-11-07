@@ -43,7 +43,7 @@ text-align: right;
 @media (max-width: 992px){
 .header_container{
     margin: 20px 20px;
-    width: 85%;
+    width: 90%;
     padding: 20px;
     }
 .logo{
@@ -70,11 +70,11 @@ text-align: right;
 /************* Mobile *******************/
 @media (max-width: 768px){
 .header_container{
-    padding : 15px;
+    padding : 10px;
 	align-items: center;
     display: flex;
     margin : 15px 15px;
-    width: 80%;
+    width: 83%;
 }
 .navbar{
     width: 70%;
