@@ -27,7 +27,7 @@ text-align: right;
     font-family: "Montserrat", sans-serif;
     line-height: 142.6%;
 }
-.navli :active {
+.navli :focus {
     -webkit-text-decoration-line: underline;
     text-decoration-line: underline;
     color: #FF6060;

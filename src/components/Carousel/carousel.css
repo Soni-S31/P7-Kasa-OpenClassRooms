@@ -29,6 +29,7 @@
     height: auto;
     left: 24px ;
     position: absolute;
+    cursor: pointer
 }
 
 .chevronRight {
@@ -36,6 +37,7 @@
     height: auto;
     right: 24px ;
     position: absolute;
+    cursor: pointer
 }
 .carousel_Index{
     position: absolute;

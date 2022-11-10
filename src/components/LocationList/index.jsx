@@ -20,6 +20,7 @@ export default function LocationList() {
                       <Link className="location_link" key={logement.id} to={`/Logement/${logement.id}`}>
                           <img className="location_img" key={"cover"+logement.id} src={logement.cover} alt={logement.title} />
                           <h2 className="location_title" key={"title"+logement.id}>{logement.title}</h2>
+                          <div className="background"></div>
                       </Link>
                   )
               ))}

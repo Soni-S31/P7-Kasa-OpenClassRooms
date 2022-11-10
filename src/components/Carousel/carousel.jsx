@@ -40,11 +40,9 @@ export default function Carousel ({img}){
                 <img src={nextIcon} className='chevronRight' alt="next" onClick={() => next(pictureActual)}/>
                 <div className='carousel_Index'>{img.indexOf(pictureActual)+1} / {numberPicture}</div>
 
-            </div>
-}
+            </div>}
         </div>
-    );
-}
+    );}
 
 
     
